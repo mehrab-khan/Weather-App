@@ -69,6 +69,8 @@ let body = document.querySelector('body')
         four.style.fontSize = '30px'
         four.style.marginLeft = '17px'
         cityName.textContent = divi;
+        date.textContent = new Date().toDateString()
+             
         let p = fetch(`https://goweather.herokuapp.com/weather/${divi}`);
         p.then((value)=>{
             console.log(value.status)
@@ -90,7 +92,6 @@ let body = document.querySelector('body')
             wind.textContent = entries[1][1]
             des.textContent = entries[2][1]
             status.textContent = entries[2][1]
-            date.textContent = new Date().toDateString()
-             
+            
         })
     })
