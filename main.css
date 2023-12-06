@@ -130,7 +130,8 @@
             height: 210px;
             position: absolute;
              margin: auto;
-              
+             right: 0;
+             left: 0;
              bottom: 0;
              border-radius: 10% 10% 0% 0%;
         }
